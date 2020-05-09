@@ -1,4 +1,4 @@
-# Moving mouse
+# Moving mouse and pressing a key (shift) to keep your computer awake.
 Keep your computer from falling sleep or being locked by moving mouse and pressing a key on keyboard intervally.
 
 
