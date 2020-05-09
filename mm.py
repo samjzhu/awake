@@ -3,7 +3,7 @@ import time
 import pyautogui 
 import random
 
-def move_mourse(intervalSec) :  
+def move_mouse(intervalSec) :  
     try:
         w,h = pyautogui.size()
         x0, y0 =  pyautogui.position()
@@ -30,7 +30,7 @@ def main():
     if len(sys.argv) > 1: 
         interval = int(sys.argv[1])
     print("interval:", interval)
-    move_mourse(interval)
+    move_mouse(interval)
 
 if __name__ == "__main__":
     main()
