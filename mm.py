@@ -7,6 +7,7 @@ def move_mouse(intervalSec) :
     try:
         w,h = pyautogui.size()
         x0, y0 =  pyautogui.position()
+        toogle = True
         while True:
             time.sleep(intervalSec)
             x, y =  pyautogui.position()
@@ -14,7 +15,11 @@ def move_mouse(intervalSec) :
                 x1 = random.randrange(200,w-200)
                 y1 = random.randrange(200,h-200)
                 try:
-                    pyautogui.press('shift')
+                    if(toogle):
+                       pyautogui.press('shiftleft')
+                    else:
+                       pyautogui.press('shiftright')
+                    toogle = not toogle
                     pyautogui.moveTo(x1, y1, duration = 1)                           
                 except pyautogui.FailSafeException as err:
                     print("FailSafeException[{0},{1}]:{2}!\n".format(x1,y1, err))
