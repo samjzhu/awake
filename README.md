@@ -21,3 +21,6 @@ or specify explict interval value in seconds, e.g 59 seconds.
 ```
 python mm.py 59
 ```
+
+## Rust Edtion:
+https://github.com/samjzhu/awake-rs
